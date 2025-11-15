@@ -3,61 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>青山绿水</title>
+    <title>环保主页</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #e0ffe0;
-            color: #333;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            background-image: url(' https://via.placeholder.com/1920x1080/3cb371/ffffff/?text=环保背景图&#x27 ;);
+            background-size: cover;
+            background-position: center;
         }
         header {
-            background-color: #5cb85c;
-            color: white;
-            padding: 20px;
-            text-align: center;
+            background-color: rgba(34, 139, 34, 0.7);
+            position: fixed;
+            width: 100%;
+            padding: 15px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            z-index: 10;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
         }
         nav {
-            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
         }
         nav a {
-            margin: 0 15px;
+            color: #fff;
             text-decoration: none;
-            color: #5cb85c;
+            padding: 10px 15px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
         }
         .content {
-            padding: 20px;
+            padding: 100px 20px 20px; /* top padding to prevent content being hidden under header */
             text-align: center;
+            background-color: rgba(0, 0, 0, 0.6);
+            margin: 20px;
+            border-radius: 10px;
         }
         footer {
-            background-color: #5cb85c;
-            color: white;
             text-align: center;
-            padding: 10px;
-            position: absolute;
+            padding: 20px 0;
+            background-color: rgba(34, 139, 34, 0.9);
+            position: relative;
             bottom: 0;
             width: 100%;
+            margin-top: 20px;
         }
-        img {
-            max-width: 100%;
-            height: auto;
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+            }
+            nav a {
+                margin: 5px 0;
+            }
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>欢迎来到青山绿水</h1>
+    <h1>欢迎来到环保天地</h1>
     <nav>
         <a href="#about">关于我们</a>
-        <a href="#services">服务</a>
+        <a href="#services">我们的服务</a>
         <a href="#contact">联系我们</a>
     </nav>
 </header>
 
 <div class="content">
-    <h2>感受自然的美</h2>
-    <p>青山绿水是我们心灵的家园，让我们一起保护和珍惜自然。</p>
-    <img src=" https://via.placeholder.com/800x400?text=青山绿水 " alt="青山绿水的风景">
+    <h2>爱护地球，人人有责</h2>
+    <p>欢迎加入我们一起保护我们的自然环境，实现可持续发展。</p>
 </div>
+
+<footer>
+    <p>&copy; 2023 环保之家. 版权所有.</p>
+</footer>
+
+</body>
+</html>
